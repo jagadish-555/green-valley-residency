@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Green Valley Residency</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="main-header">
+        <div class="header-container">
+            <h1>Green Valley Residency</h1>
+            <p class="tagline">Premium Homes for Modern Living</p>
+        </div>
+    </header>
+    <main class="container">
+        <section class="project-overview">
+
+            <div class="image-wrapper">
+                <div class="image-placeholder">
+                    <h2>Project Image Coming Soon</h2>
+                </div>
+            </div>
+
+            <div class="details-wrapper">
+                <h2>Project Details</h2>
+                <ul class="details-list">
+                    <li><strong>Location:</strong> Whitefield, Bangalore</li>
+                    <li><strong>Property Type:</strong> 2 BHK and 3 BHK Apartments</li>
+                    <li><strong>Starting Price:</strong> Rs. 75 Lakhs</li>
+                    <li><strong>Possession:</strong> December 2027</li>
+                    <li><strong>Developer:</strong> Green Valley Developers</li>
+                </ul>
+            </div>
+
+        </section>
+        <section class="content-section">
+            <h2>Amenities</h2>
+
+            <ul class="amenities-list" id="amenitiesList">
+                <li>
+                    <img src="images/swimming_pool_image.jpg" alt="Swimming Pool">
+                    <span>Swimming Pool</span>
+                </li>
+                <li>
+                    <img src="images/clubhouse_image.avif" alt="Clubhouse">
+                    <span>Clubhouse</span>
+                </li>
+                <li>
+                    <img src="images/gym_image.jpeg" alt="Gym">
+                    <span>Gym</span>
+                </li>
+                <li>
+                    <img src="images/gym_image.jpeg" alt="Children's Play Area">
+                    <span>Children's Play Area</span>
+                </li>
+                <li>
+                    <img src="images/Landscaped_Garden_image.webp" alt="Landscaped Garden">
+                    <span>Landscaped Garden</span>
+                </li>
+                <li>
+                    <img src="images/security_image.jpeg" alt="24/7 Security">
+                    <span>24/7 Security</span>
+                </li>
+                <li>
+                    <img src="images/parking_image.jpg" alt="Parking">
+                    <span>Parking</span>
+                </li>
+                <li>
+                    <img src="images/Jogging_Track_image.webp" alt="Jogging Track">
+                    <span>Jogging Track</span>
+                </li>
+            </ul>
+        </section>
+
+        <section class="content-section">
+            <h2>Enquire Now</h2>
+
+            <form id="enquiryForm" class="enquiry-form">
+                <div class="form-group">
+                    <label for="fullName">Full Name</label>
+                    <input type="text" id="fullName" placeholder="Enter your full name">
+                    <span class="error-message" id="nameError"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="Enter your email address">
+                    <span class="error-message" id="emailError"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" placeholder="Enter your 10-digit phone number">
+                    <span class="error-message" id="phoneError"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="unitType">Interested Unit Type</label>
+                    <select id="unitType">
+                        <option value="">Select a unit type...</option>
+                        <option value="2 BHK">2 BHK</option>
+                        <option value="3 BHK">3 BHK</option>
+                    </select>
+                    <span class="error-message" id="unitError"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Message (Optional)</label>
+                    <textarea id="message" rows="4" placeholder="Tell us about your requirements..."></textarea>
+                </div>
+
+                <button type="submit" class="submit-btn">Submit Enquiry</button>
+
+                <div id="successMessage" class="success-message"></div>
+            </form>
+
+        </section>
+
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
